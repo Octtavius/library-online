@@ -10,7 +10,7 @@ public class BookDto implements Serializable {
     private Long pkBookId;
     private String title;
     private String shortDesc;
-    private Long fkAuthorId;
+//    private Long fkAuthorId;
     private Enum genre;
     private Date publishedDate;
     private Date uploadedDate;
@@ -22,7 +22,7 @@ public class BookDto implements Serializable {
         this.pkBookId = book.getPkBookId();
         this.title = book.getTitle();
         this.shortDesc = book.getShortDesc();
-        this.fkAuthorId = book.getFkAuthorId();
+//        this.fkAuthorId = book.getFkAuthorId();
         this.genre = book.getGenre();
         this.publishedDate = book.getPublishedDate();
         this.uploadedDate = book.getUploadedDate();
@@ -32,7 +32,7 @@ public class BookDto implements Serializable {
     public BookDto(String title, String shortDesc, Long fkAuthorId, Enum genre, Date publishedDate, Date uploadDate, Date modifiedDate) {
         this.title = title;
         this.shortDesc = shortDesc;
-        this.fkAuthorId = fkAuthorId;
+//        this.fkAuthorId = fkAuthorId;
         this.genre = genre;
         this.publishedDate = publishedDate;
         this.uploadedDate = uploadDate;
@@ -51,9 +51,9 @@ public class BookDto implements Serializable {
         this.shortDesc = shortDesc;
     }
 
-    public void setFkAuthorId(Long fkAuthorId) {
-        this.fkAuthorId = fkAuthorId;
-    }
+//    public void setFkAuthorId(Long fkAuthorId) {
+//        this.fkAuthorId = fkAuthorId;
+//    }
 
     public void setGenre(Enum genre) {
         this.genre = genre;
@@ -83,9 +83,9 @@ public class BookDto implements Serializable {
         return shortDesc;
     }
 
-    public Long getFkAuthorId() {
-        return fkAuthorId;
-    }
+//    public Long getFkAuthorId() {
+//        return fkAuthorId;
+//    }
 
     public Enum getGenre() {
         return genre;

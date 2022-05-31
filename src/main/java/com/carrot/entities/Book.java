@@ -20,8 +20,8 @@ public class Book {
     @Column
     private String shortDesc;
 
-    @Column
-    private Long fkAuthorId;
+//    @Column
+//    private Long fkAuthorId;
 
     @Column
     @Enumerated(EnumType.STRING)
@@ -41,7 +41,7 @@ public class Book {
     public Book(String title, String shortDesc, Long fkAuthorId, Genres genre, Date publishedDate, Date uploadDate, Date modifiedDate) {
         this.title = title;
         this.shortDesc = shortDesc;
-        this.fkAuthorId = fkAuthorId;
+//        this.fkAuthorId = fkAuthorId;
         this.genre = genre;
         this.publishedDate = publishedDate;
         this.uploadedDate = uploadDate;
@@ -60,9 +60,9 @@ public class Book {
         return shortDesc;
     }
 
-    public Long getFkAuthorId() {
-        return fkAuthorId;
-    }
+//    public Long getFkAuthorId() {
+//        return fkAuthorId;
+//    }
 
     public Genres getGenre() {
         return genre;
